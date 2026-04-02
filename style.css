@@ -1,55 +1,56 @@
 /* ===================== */
-/* RESET (DO NOT TOUCH)  */
+/* RESET */
 /* ===================== */
 * {
-  margin: 0;              /* removes default spacing */
+  margin: 0;
   padding: 0;
-  box-sizing: border-box; /* keeps layout consistent */
+  box-sizing: border-box;
 }
 
-/* ===================== */
-/* BODY                  */
-/* ===================== */
 body {
-  font-family: 'Inter', sans-serif; /* main text font */
-  background: #0f172a;              /* dark background */
-  color: #e5e7eb;                  /* text color */
+  font-family: 'Inter', sans-serif;
+  background: #0f172a;
+  color: #e5e7eb;
 }
 
 /* ===================== */
-/* NAVBAR                */
+/* TOP NAVBAR */
 /* ===================== */
 .navbar {
   display: flex;
-  justify-content: space-between; /* logo left, menu right */
+  justify-content: space-between;
+  align-items: center;
   padding: 20px 60px;
   background: #020617;
-  position: sticky;  /* keeps navbar visible */
+  position: sticky;
   top: 0;
   z-index: 1000;
 }
 
-.navbar a {
-  margin-left: 25px;
-  text-decoration: none;
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.social-icons {
+  display: flex;
+  gap: 22px;
+}
+
+.social-icons a {
   color: #cbd5f5;
-  font-size: 16px;
+  font-size: 26px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #3b82f6;
+  transform: translateY(-3px);
 }
 
 /* ===================== */
-/* CONTAINER (GLOBAL)    */
-/* ===================== */
-.container {
-  width: 90%;            /* page side margin */
-  max-width: 1100px;     /* max width */
-  margin: 0 auto;        /* center */
-}
-
-/* ===================== */
-/* HERO SECTION          */
-/* ===================== */
-/* ===================== */
-/* HERO SECTION          */
+/* HERO */
 /* ===================== */
 .hero {
   text-align: center;
@@ -60,20 +61,17 @@ body {
   font-family: 'Playfair Display', serif;
   font-size: 92px;
   font-weight: 700;
-  margin-bottom: 12px;   /* 🔽 smaller gap (name → subtitle) */
+  margin-bottom: 12px;
 }
 
 .hero p {
-  margin-bottom: 40px;   /* 🔼 bigger gap (subtitle → buttons) */
+  margin-bottom: 40px;
   font-size: 20px;
   color: #94a3b8;
 }
 
-/* ===================== */
-/* BUTTONS               */
-/* ===================== */
 .buttons {
-  margin-top: 100px;          /* remove extra gap so spacing matches above */
+  margin-top: 40px;
 }
 
 .btn {
@@ -96,78 +94,65 @@ body {
 }
 
 /* ===================== */
-/* SECTIONS              */
+/* SECONDARY NAV */
 /* ===================== */
-.section {
-  padding: 100px 0; /* vertical spacing */
+.secondary-nav {
+  background: #020617;
+  padding: 14px 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.secondary-nav .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.secondary-nav a {
+  color: #cbd5f5;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.secondary-nav a:hover {
+  color: #3b82f6;
 }
 
 /* ===================== */
-/* HEADINGS              */
+/* SECTIONS */
 /* ===================== */
+.section {
+  padding: 100px 0;
+}
+
 .section h2 {
   font-family: 'Playfair Display', serif;
   font-size: 36px;
   margin-bottom: 30px;
+  text-align: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 /* ===================== */
-/* ABOUT SECTION         */
-/* ===================== */
-.about-wrapper {
-  display: flex;                 /* left text + right image */
-  justify-content: space-between;
-  align-items: center;
-  gap: 30px;                     /* 🔥 REDUCED from 60 → fixes large gap */
-}
-
-/* TEXT SIDE */
-.about-text {
-  flex: 1;                       /* take available space */
-  max-width: 720px;              /* 🔥 INCREASED → pushes text closer to image */
-}
-
-/* HEADING */
-.about-text h2 {
-  font-size: 42px;
-  margin-bottom: 20px;
-}
-
-/* PARAGRAPH */
-.about-text p {
-  font-size: 17px;
-  line-height: 1.8;
-  color: #94a3b8;
-  text-align: justify;
-  margin-bottom: 18px;
-}
-
-/* IMAGE SIDE */
-.about-img {
-  flex: 0 0 260px;               /* fixed image width */
-}
-
-/* IMAGE */
-.about-img img {
-  width: 100%;                   /* fill container */
-  border-radius: 16px;
-}
-
-/* ===================== */
-/* PROJECTS              */
-/* ===================== */
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
-}
-
 /* CARD */
+/* ===================== */
 .card {
   background: #1e293b;
-  padding: 20px;
+  padding: 25px;
   border-radius: 15px;
   transition: 0.3s;
+  margin-bottom: 20px;
 }
 
 .card:hover {
@@ -175,11 +160,97 @@ body {
 }
 
 .card h3 {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   font-size: 20px;
 }
 
 .card p {
   color: #94a3b8;
+  font-size: 15.5px;
+  line-height: 1.6;
+}
+
+.date {
+  color: #64748b;
+  font-size: 14px;
+  margin: 8px 0 15px 0;
+}
+
+/* ===================== */
+/* PROJECT GRID */
+/* ===================== */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+}
+
+/* ===================== */
+/* SKILLS GRID */
+/* ===================== */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+}
+
+.skill-item {
+  background: #1e293b;
+  padding: 14px 20px;
+  border-radius: 50px;
+  text-align: center;
   font-size: 15px;
+  color: #e0f2fe;
+  transition: 0.3s;
+}
+
+.skill-item:hover {
+  background: #3b82f6;
+  color: white;
+}
+
+/* ===================== */
+/* SMALL BUTTON */
+/* ===================== */
+.btn-small {
+  display: inline-block;
+  margin-top: 15px;
+  background: #1e40af;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 30px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.btn-small:hover {
+  background: #3b82f6;
+}
+
+/* ===================== */
+/* ABOUT SECTION */
+/* ===================== */
+.about-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.about-text {
+  flex: 1;
+  max-width: 720px;
+}
+
+.about-text p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #94a3b8;
+  margin-bottom: 18px;
+}
+
+.about-img img {
+  width: 100%;
+  max-width: 260px;
+  border-radius: 16px;
 }
