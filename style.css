@@ -14,13 +14,13 @@ body {
 }
 
 /* ===================== */
-/* TOP NAVBAR (Narrower) */
+/* TOP NAVBAR - Always Fixed */
 /* ===================== */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 60px;   /* reduced height */
+  padding: 16px 60px;
   background: #020617;
   position: sticky;
   top: 0;
@@ -94,57 +94,51 @@ body {
 }
 
 /* ===================== */
-/* SECONDARY NAV (Stands out + One line) */
+/* SECONDARY NAV - Full width, scrolls normally, no scrollbar */
 /* ===================== */
 .secondary-nav {
   background: #020617;
-  padding: 16px 0;
-  position: sticky;
-  top: 0;
-  z-index: 999;
+  padding: 16px 60px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
-.secondary-nav .container {
+.secondary-container {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: center;
-  gap: 18px;           /* reduced gap */
-  overflow-x: auto;
-  padding: 0 20px;
+  gap: 28px;
+  overflow-x: hidden;           /* removed scrollbar */
+  white-space: nowrap;
 }
 
-.secondary-nav a {
-  color: #00e5d4;      /* bright teal like your image */
-  text-decoration: none;
+.secondary-container a {
+  color: transparent;
+  background: linear-gradient(90deg, #00ff9d, #00e5d4, #00b8ff);
+  -webkit-background-clip: text;
   font-size: 15.5px;
   font-weight: 600;
-  white-space: nowrap;
+  text-decoration: none;
   transition: 0.3s;
 }
 
-.secondary-nav a:hover {
+.secondary-container a:hover {
   color: #ffffff;
-  text-decoration: underline;
 }
 
 /* ===================== */
-/* SECTIONS */
+/* SECTION HEADINGS - Gradient + Left aligned */
 /* ===================== */
-.section {
-  padding: 100px 0;
-}
-
 .section h2 {
   font-family: 'Playfair Display', serif;
   font-size: 36px;
   margin-bottom: 30px;
-  text-align: left;          /* left aligned */
-  color: #00e5d4;            /* bright teal */
+  text-align: left;
+  color: transparent;
+  background: linear-gradient(90deg, #00ff9d, #00e5d4, #00b8ff);
+  -webkit-background-clip: text;
 }
 
 /* ===================== */
-/* CONTAINER */
+/* CONTAINER & SECTIONS */
 /* ===================== */
 .container {
   width: 90%;
@@ -152,9 +146,10 @@ body {
   margin: 0 auto;
 }
 
-/* ===================== */
-/* CARD */
-/* ===================== */
+.section {
+  padding: 100px 0;
+}
+
 .card {
   background: #1e293b;
   padding: 25px;
@@ -176,7 +171,7 @@ body {
   color: #94a3b8;
   font-size: 15.5px;
   line-height: 1.7;
-  text-align: justify;     /* justified text */
+  text-align: justify;
 }
 
 .date {
@@ -185,9 +180,6 @@ body {
   margin: 8px 0 15px 0;
 }
 
-/* ===================== */
-/* PROJECT GRID & SKILLS */
-/* ===================== */
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -215,9 +207,6 @@ body {
   color: white;
 }
 
-/* ===================== */
-/* SMALL BUTTON */
-/* ===================== */
 .btn-small {
   display: inline-block;
   margin-top: 15px;
@@ -233,9 +222,6 @@ body {
   background: #3b82f6;
 }
 
-/* ===================== */
-/* ABOUT SECTION */
-/* ===================== */
 .about-wrapper {
   display: flex;
   justify-content: space-between;
@@ -253,7 +239,7 @@ body {
   line-height: 1.8;
   color: #94a3b8;
   margin-bottom: 18px;
-  text-align: justify;     /* justified */
+  text-align: justify;
 }
 
 .about-img img {
