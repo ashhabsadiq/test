@@ -14,13 +14,13 @@ body {
 }
 
 /* ===================== */
-/* TOP NAVBAR */
+/* TOP NAVBAR (Narrower) */
 /* ===================== */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 60px;
+  padding: 16px 60px;   /* reduced height */
   background: #020617;
   position: sticky;
   top: 0;
@@ -45,7 +45,7 @@ body {
 }
 
 .social-icons a:hover {
-  color: #3b82f6;
+  color: #00e5d4;
   transform: translateY(-3px);
 }
 
@@ -94,34 +94,38 @@ body {
 }
 
 /* ===================== */
-/* SECONDARY NAV */
+/* SECONDARY NAV (Stands out + One line) */
 /* ===================== */
 .secondary-nav {
   background: #020617;
-  padding: 14px 0;
+  padding: 16px 0;
   position: sticky;
   top: 0;
   z-index: 999;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 .secondary-nav .container {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
-  gap: 25px;
+  gap: 18px;           /* reduced gap */
+  overflow-x: auto;
+  padding: 0 20px;
 }
 
 .secondary-nav a {
-  color: #cbd5f5;
+  color: #00e5d4;      /* bright teal like your image */
   text-decoration: none;
-  font-size: 15px;
-  font-weight: 500;
+  font-size: 15.5px;
+  font-weight: 600;
+  white-space: nowrap;
   transition: 0.3s;
 }
 
 .secondary-nav a:hover {
-  color: #3b82f6;
+  color: #ffffff;
+  text-decoration: underline;
 }
 
 /* ===================== */
@@ -135,9 +139,13 @@ body {
   font-family: 'Playfair Display', serif;
   font-size: 36px;
   margin-bottom: 30px;
-  text-align: center;
+  text-align: left;          /* left aligned */
+  color: #00e5d4;            /* bright teal */
 }
 
+/* ===================== */
+/* CONTAINER */
+/* ===================== */
 .container {
   width: 90%;
   max-width: 1100px;
@@ -167,7 +175,8 @@ body {
 .card p {
   color: #94a3b8;
   font-size: 15.5px;
-  line-height: 1.6;
+  line-height: 1.7;
+  text-align: justify;     /* justified text */
 }
 
 .date {
@@ -177,7 +186,7 @@ body {
 }
 
 /* ===================== */
-/* PROJECT GRID */
+/* PROJECT GRID & SKILLS */
 /* ===================== */
 .project-grid {
   display: grid;
@@ -185,9 +194,6 @@ body {
   gap: 25px;
 }
 
-/* ===================== */
-/* SKILLS GRID */
-/* ===================== */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -247,6 +253,7 @@ body {
   line-height: 1.8;
   color: #94a3b8;
   margin-bottom: 18px;
+  text-align: justify;     /* justified */
 }
 
 .about-img img {
