@@ -22,9 +22,7 @@ body {
   align-items: center;
   padding: 16px 60px;
   background: #020617;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  font-size: 15.8px;           /* matched with 2nd ribbon */
 }
 
 .logo {
@@ -94,7 +92,7 @@ body {
 }
 
 /* ===================== */
-/* SECONDARY NAV - Sticky + Same margin as top ribbon */
+/* SECONDARY NAV - Sticky + Even spacing + Pure white */
 /* ===================== */
 .secondary-nav {
   background: #020617;
@@ -108,15 +106,12 @@ body {
 .secondary-container {
   display: flex;
   flex-wrap: nowrap;
-  gap: 32px;               /* increased spacing */
-  overflow-x: hidden;
+  gap: 38px;                    /* increased for better spacing */
   white-space: nowrap;
 }
 
 .secondary-container a {
-  color: transparent;
-  background: linear-gradient(90deg, #00ff9d, #00e5d4, #00b8ff);
-  -webkit-background-clip: text;
+  color: #ffffff;               /* pure white */
   font-size: 15.8px;
   font-weight: 600;
   text-decoration: none;
@@ -124,24 +119,22 @@ body {
 }
 
 .secondary-container a:hover {
-  color: #ffffff;
+  color: #00e5d4;
 }
 
 /* ===================== */
-/* SECTION HEADINGS - Same gradient */
+/* SECTION HEADINGS */
 /* ===================== */
 .section h2 {
   font-family: 'Playfair Display', serif;
   font-size: 36px;
   margin-bottom: 30px;
   text-align: left;
-  color: transparent;
-  background: linear-gradient(90deg, #00ff9d, #00e5d4, #00b8ff);
-  -webkit-background-clip: text;
+  color: #00e5d4;
 }
 
 /* ===================== */
-/* CONTAINER & OTHER STYLES */
+/* CONTAINER */
 /* ===================== */
 .container {
   width: 90%;
@@ -153,16 +146,26 @@ body {
   padding: 100px 0;
 }
 
+/* ===================== */
+/* CLICKABLE CARD */
+/* ===================== */
+.card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
 .card {
   background: #1e293b;
   padding: 25px;
   border-radius: 15px;
   transition: 0.3s;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .card:hover {
   transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 229, 212, 0.15);
 }
 
 .card h3 {
@@ -208,21 +211,6 @@ body {
 .skill-item:hover {
   background: #3b82f6;
   color: white;
-}
-
-.btn-small {
-  display: inline-block;
-  margin-top: 15px;
-  background: #1e40af;
-  color: white;
-  padding: 8px 18px;
-  border-radius: 30px;
-  font-size: 14px;
-  text-decoration: none;
-}
-
-.btn-small:hover {
-  background: #3b82f6;
 }
 
 .about-wrapper {
