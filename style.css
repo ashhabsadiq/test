@@ -14,7 +14,7 @@ body {
 }
 
 /* ===================== */
-/* TOP NAVBAR - Always Fixed */
+/* TOP NAVBAR */
 /* ===================== */
 .navbar {
   display: flex;
@@ -94,19 +94,22 @@ body {
 }
 
 /* ===================== */
-/* SECONDARY NAV - Full width, scrolls normally, no scrollbar */
+/* SECONDARY NAV - Sticky + Same margin as top ribbon */
 /* ===================== */
 .secondary-nav {
   background: #020617;
   padding: 16px 60px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 .secondary-container {
   display: flex;
   flex-wrap: nowrap;
-  gap: 28px;
-  overflow-x: hidden;           /* removed scrollbar */
+  gap: 32px;               /* increased spacing */
+  overflow-x: hidden;
   white-space: nowrap;
 }
 
@@ -114,7 +117,7 @@ body {
   color: transparent;
   background: linear-gradient(90deg, #00ff9d, #00e5d4, #00b8ff);
   -webkit-background-clip: text;
-  font-size: 15.5px;
+  font-size: 15.8px;
   font-weight: 600;
   text-decoration: none;
   transition: 0.3s;
@@ -125,7 +128,7 @@ body {
 }
 
 /* ===================== */
-/* SECTION HEADINGS - Gradient + Left aligned */
+/* SECTION HEADINGS - Same gradient */
 /* ===================== */
 .section h2 {
   font-family: 'Playfair Display', serif;
@@ -138,7 +141,7 @@ body {
 }
 
 /* ===================== */
-/* CONTAINER & SECTIONS */
+/* CONTAINER & OTHER STYLES */
 /* ===================== */
 .container {
   width: 90%;
