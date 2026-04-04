@@ -399,3 +399,62 @@ body {
   height: auto;
   display: block;
 }
+
+/* ===================== */
+/* EXTRACURRICULAR - Text left + Images right */
+/* ===================== */
+.extra-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  align-items: flex-start;
+}
+
+.extra-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.extra-text h3 {
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+.extra-text .company {
+  color: #00e5d4;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.extra-text ul {
+  padding-left: 22px;
+  line-height: 1.75;
+}
+
+.extra-text ul li {
+  margin-bottom: 12px;
+  color: #cbd5f5;
+}
+
+.extra-images {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.extra-images img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: 0.3s;
+}
+
+.extra-images img:hover {
+  transform: scale(1.03);
+}
