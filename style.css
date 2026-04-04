@@ -370,8 +370,8 @@ body {
   text-align: justify;
   max-width: 100%;                    /* removed narrow width */
   margin-bottom: 40px;
-  font-size: 17.5px;
-  line-height: 1.75;                  /* better readability */
+  font-size: 18px;
+  line-height: 1.5;                  /* better readability */
   color: #f2f5ff;                     /* same bright white as other paragraphs */
 }
 
@@ -464,7 +464,7 @@ body {
 /* ===================== */
 .extra-text ul {
   padding-left: 22px;
-  line-height: 1.75;
+  line-height: 1.5;
   text-align: justify;           /* Justified bullets */
 }
 
