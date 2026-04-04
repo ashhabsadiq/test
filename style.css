@@ -318,3 +318,47 @@ body {
 .card ol {
   list-style-type: decimal;
 }
+
+/* ===================== */
+/* CERTIFICATIONS GRID */
+/* ===================== */
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.cert-card {
+  background: #1e293b;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.3s;
+  text-decoration: none;
+  color: inherit;
+}
+
+.cert-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 229, 212, 0.2);
+}
+
+.cert-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.cert-info {
+  padding: 14px 16px;
+}
+
+.cert-info h4 {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.cert-info p {
+  color: #94a3b8;
+  font-size: 14px;
+  margin: 0;
+}
