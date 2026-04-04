@@ -300,7 +300,7 @@ body {
 .card ul, .card ol {
   padding-left: 22px;
   margin: 8px 0 18px 0;
-  line-height: 1.75;
+  line-height: 1.15;
 }
 
 .card ul li, .card ol li {
