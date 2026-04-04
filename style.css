@@ -259,3 +259,31 @@ body {
   max-width: 260px;
   border-radius: 16px;
 }
+
+/* ===================== */
+/* WORK EXPERIENCE HEADER - Title left + Tenure right */
+/* ===================== */
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.job-header h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.tenure {
+  font-size: 14px;
+  color: #94a3b8;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.company {
+  color: #e0f2fe;
+  font-size: 15.5px;
+  margin-bottom: 12px;
+}
