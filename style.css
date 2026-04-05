@@ -220,7 +220,7 @@ body {                       /* main background and text style */
 .card p {
   color: #f2f5ff;
   font-size: 17px;
-  line-height: 1.5;
+  line-height: 1.7;
   text-align: justify;
 }
 
@@ -278,7 +278,7 @@ body {                       /* main background and text style */
 
 .about-text p {
   font-size: 17px;
-  line-height: 1.8;
+  line-height: 1.7;
   color: #f2f5ff;
   margin-bottom: 18px;
   text-align: justify;
@@ -327,7 +327,7 @@ body {                       /* main background and text style */
 .card ul, .card ol {
   padding-left: 22px;
   margin: 8px 0 18px 0;
-  line-height: 1.75;
+  line-height: 1.7;
 }
 
 .card ul li, .card ol li {
@@ -391,7 +391,7 @@ body {                       /* main background and text style */
   max-width: 100%;
   margin-bottom: 40px;
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 1.7;
   color: #f2f5ff;
 }
 
@@ -452,7 +452,7 @@ body {                       /* main background and text style */
 
 .extra-text ul {
   padding-left: 22px;
-  line-height: 1.75;
+  line-height: 1.7;
   text-align: justify;
 }
 
