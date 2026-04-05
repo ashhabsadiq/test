@@ -93,7 +93,7 @@ body {
 
 /* Golden CV Button */
 .cv-button-wrapper {
-  margin-top: 20px;
+  margin-top: 40px;
   display: flex;
   justify-content: center;
 }
@@ -175,7 +175,7 @@ h3 {                                      /* First line: Degree, Designation, Ti
 }
 
 h4 {                                      /* Second line: Institution, Company, Club */
-  font-size: 18px;                        /* slightly smaller than h3 */
+  font-size: 20px;                        /* slightly smaller than h3 */
   color: #d2b34c;                         /* golden yellow */
   margin-bottom: 14px;
   font-weight: 500;
