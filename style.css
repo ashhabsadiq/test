@@ -684,74 +684,101 @@ h5 {
 }
 
 /* ===================== */
-/* RESPONSIVE DESIGN - IMPROVED FOR MOBILE */
+/* RESPONSIVE DESIGN - FINAL MOBILE FIX */
 /* ===================== */
 
 @media (max-width: 768px) {
 
-  /* Navbar padding reduced */
-  .navbar, .secondary-nav {
-    padding: 14px 20px;
+  /* Wider overall content */
+  .container {
+    width: 95% !important;
+    max-width: 1200px;
   }
 
-  /* Logo slightly smaller */
+  /* Hide text logo on mobile, show hamburger instead */
   .logo {
-    font-size: 18px;
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
   }
 
-  /* Secondary navbar - wrap + smaller font + centered */
-  .secondary-container {
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-    padding: 8px 0;
+  /* Hamburger styles */
+  .hamburger-label {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 28px;
   }
-  .secondary-container a {
-    font-size: 13px;
-    padding: 6px 14px;
-    white-space: normal;
-    text-align: center;
+  .hamburger-label span {
+    height: 3px;
+    background: #292929;
+    border-radius: 3px;
+    transition: 0.3s;
+  }
+  .hamburger-text {
+    font-size: 15px;
+    font-weight: 600;
+    color: #292929;
   }
 
-  /* Hero - smaller title so it doesn't break into 3 lines */
-  .hero {
-    padding: 90px 15px 70px;
+  /* Light mode hamburger color */
+  .light-mode .hamburger-label span,
+  .light-mode .hamburger-text {
+    background: #292929;
+    color: #292929;
   }
+
+  /* Mobile Menu Panel */
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: -280px;
+    width: 280px;
+    height: 100vh;
+    background: #020617;
+    box-shadow: 4px 0 15px rgba(0, 0, 0, 0.3);
+    padding: 80px 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    transition: left 0.4s ease;
+    z-index: 9999;
+    overflow-y: auto;
+  }
+  .mobile-menu a {
+    color: #ffffff;
+    font-size: 16px;
+    padding: 14px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+  .mobile-menu a:hover {
+    background: #1e293b;
+    color: #00e5d4;
+  }
+
+  /* Open menu when checkbox checked */
+  #mobile-menu-toggle:checked ~ .mobile-menu {
+    left: 0;
+  }
+
+  /* Hero title size */
   .hero h1 {
-    font-size: 46px;          /* reduced from 52px */
+    font-size: 46px;
     line-height: 1.05;
   }
-  .hero p {
-    font-size: 17.5px;
-  }
 
-  /* Hero buttons - full width and stacked */
-  .buttons {
-    margin-top: 30px;
-    flex-direction: column;
-    gap: 12px;
-    align-items: center;
-  }
-  .btn, .btn-outline, .btn-cv {
-    width: 100%;
-    max-width: 300px;
-    margin: 0 auto;
-    padding: 15px 24px;
-    font-size: 16.5px;
-  }
-
-  /* All sections padding reduced */
-  .section {
-    padding: 65px 0;
-  }
-
-  /* About Me - force single column, photo on top */
+  /* About Me - single column, photo BELOW heading */
   .about-wrapper {
     flex-direction: column;
     gap: 25px;
   }
   .about-img {
-    order: -1;               /* photo comes first */
+    order: 1;               /* photo comes after heading */
     text-align: center;
   }
   .about-img img {
@@ -759,150 +786,21 @@ h5 {
     margin: 0 auto;
   }
 
-  /* Research & Academic Projects - comfortable card width */
+  /* Research & Academic cards - comfortable width */
   .research-grid,
   .academic-grid {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
   }
-
-  /* Cards & grids - single column on very small phones */
-  .cert-grid,
-  .award-grid {
-    grid-template-columns: 1fr;
-  }
-
-  /* Work experience - better spacing */
-  .job-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 6px;
-  }
-  .tenure {
-    font-size: 13.5px;
-  }
-
-  /* Skills pills */
-  .skill-item {
-    font-size: 14.5px;
-    padding: 8px 16px;
-  }
-
-  /* Contact buttons */
-  .contact-buttons {
-    gap: 16px;
-  }
-  .contact-btn {
-    width: 118px;
-    height: 118px;
-  }
-  .contact-btn i {
-    font-size: 44px;
-  }
 }
 
-/* Extra small phones (max 480px) */
+/* Extra small phones */
 @media (max-width: 480px) {
   .hero h1 {
     font-size: 40px;
   }
-  .secondary-container a {
-    font-size: 12.5px;
-  }
   .research-grid,
   .academic-grid {
-    grid-template-columns: 1fr;   /* single column on very small phones */
-  }
-}
-
-/* ===================== */
-/* MOBILE HAMBURGER MENU + WIDER LAYOUT */
-/* ===================== */
-
-/* Wider overall content on all devices */
-.container {
-  width: 95% !important;
-  max-width: 1200px;
-}
-
-/* Hamburger styles */
-.hamburger {
-  display: none;
-  align-items: center;
-  gap: 8px;
-  cursor: pointer;
-  z-index: 1000;
-}
-.hamburger-label {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  width: 28px;
-}
-.hamburger-label span {
-  height: 3px;
-  background: #292929;
-  border-radius: 3px;
-  transition: 0.3s;
-}
-.hamburger-text {
-  font-size: 15px;
-  font-weight: 600;
-  color: #292929;
-}
-
-/* Mobile Menu Panel */
-.mobile-menu {
-  position: fixed;
-  top: 0;
-  left: -280px;
-  width: 280px;
-  height: 100vh;
-  background: #020617;
-  box-shadow: 4px 0 15px rgba(0, 0, 0, 0.3);
-  padding: 80px 20px 30px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  transition: left 0.4s ease;
-  z-index: 9999;
-  overflow-y: auto;
-}
-.mobile-menu a {
-  color: #ffffff;
-  font-size: 16px;
-  padding: 14px 20px;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: 0.3s;
-}
-.mobile-menu a:hover {
-  background: #1e293b;
-  color: #00e5d4;
-}
-
-/* When checkbox is checked, open the menu */
-#mobile-menu-toggle:checked ~ .mobile-menu {
-  left: 0;
-}
-
-/* Show hamburger only on mobile */
-@media (max-width: 768px) {
-  .hamburger {
-    display: flex;
-  }
-  .secondary-nav {
-    display: none;               /* hide old navbar on mobile */
-  }
-}
-
-/* Make sure hero and sections are not too narrow */
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 46px;
-  }
-  .research-grid,
-  .academic-grid {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: 1fr;
   }
 }
