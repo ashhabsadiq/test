@@ -329,11 +329,12 @@ h5 {
   padding: 14px 16px;
 }
 .cert-info h4 {
+  color: #ffffff;
   font-size: 16px;
   margin-bottom: 4px;
 }
 .cert-info p {
-  color: #94a3b8;
+  color: #d2b34c;
   font-size: 14px;
   margin: 0;
 }
