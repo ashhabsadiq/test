@@ -586,7 +586,7 @@ h5 {
 
 /* Section headings */
 .light-mode .section h2 {
-  color: #203864;
+  color: #203864 !important;
 }
 
 /* View Research button (outline + text) */
