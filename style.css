@@ -550,7 +550,7 @@ h5 {
   color: var(--text) !important;
 }
 
-/* Hero section (the area between the two navbars) */
+/* Hero section (between the two navbars) */
 .light-mode .hero {
   background: var(--bg) !important;
 }
@@ -571,12 +571,31 @@ h5 {
   color: #292929;
 }
 
+/* Top navbar icons (GitHub + Email) */
+.light-mode .social-icons a {
+  color: #292929;
+}
+.light-mode .social-icons a:hover {
+  color: #203864;
+}
+
+/* Section heading icons (graduation cap, flask, etc.) */
+.light-mode .section h2 i {
+  color: #1e40af;
+}
+
 /* Section headings */
 .light-mode .section h2 {
   color: #1e40af;
 }
 
-/* All cards & containers with soft grey outer glow (PowerPoint-style) */
+/* View Research button (outline + text) */
+.light-mode .btn-outline {
+  border: 1px solid #292929;
+  color: #292929;
+}
+
+/* All cards & containers with soft grey outer glow */
 .light-mode .card,
 .light-mode .research-card,
 .light-mode .cert-card,
@@ -585,7 +604,7 @@ h5 {
 .light-mode .contact-btn,
 .light-mode .skill-item {
   background: var(--card) !important;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12) !important;   /* soft grey outer glow */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12) !important;
 }
 
 /* All text (h1, h2, h3, h5, paragraphs, bullets, lists) */
@@ -618,7 +637,7 @@ h5 {
   color: #292929 !important;
 }
 .light-mode .skill-item:hover {
-  background: #faf8f4 !important;
+  background: #3b82f6 !important;
   color: white !important;
 }
 
@@ -631,7 +650,7 @@ h5 {
   color: #292929 !important;
 }
 .light-mode .contact-btn:hover {
-  background: #faf8f4 !important;
+  background: #3b82f6 !important;
   color: white !important;
 }
 
