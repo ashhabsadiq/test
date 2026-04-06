@@ -483,7 +483,7 @@ h5 {
   box-shadow: 0 12px 25px rgba(0, 229, 212, 0.15);
 }
 .research-card h3 {
-  font-size: 20px;
+  font-size: 18px;
   color: #ffffff;
   margin-bottom: 8px;
   line-height: 1.3;
@@ -516,7 +516,7 @@ h5 {
 .keyword-tags .tag {
   background: #0f172a;
   color: #d2b34c;
-  font-size: 12px;
+  font-size: 13.5px;
   padding: 4px 14px;
   border-radius: 30px;
   white-space: nowrap;
@@ -531,18 +531,4 @@ h5 {
 .research-grid .card-link:hover,
 .research-card a:hover {
   color: #00e5d4;
-}
-
-/* ===================== */
-/* ACADEMIC PROJECTS - 3 cards per row */
-/* ===================== */
-.academic-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));   /* 3 per row */
-  gap: 24px;
-}
-
-/* Slightly smaller title only for Academic Projects */
-.academic-grid .research-card h3 {
-  font-size: 16px;   /* reduced only here */
 }
