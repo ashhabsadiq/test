@@ -534,7 +534,7 @@ h5 {
 }
 
 /* ===================== */
-/* LIGHT MODE THEME - Updated as requested */
+/* LIGHT MODE THEME - FULLY FIXED as requested */
 /* ===================== */
 .light-mode {
   --bg: #fafadc;
@@ -544,36 +544,41 @@ h5 {
   --accent: #1d4ed8;
 }
 
+/* Main background & text */
 .light-mode body {
-  background: var(--bg);
-  color: var(--text);
+  background: var(--bg) !important;
+  color: var(--text) !important;
 }
 
+/* Navbar & Secondary Nav */
 .light-mode .navbar,
 .light-mode .secondary-nav {
   background: #ffffff;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-
 .light-mode .logo,
 .light-mode .secondary-container a {
   color: #333333;
 }
 
+/* Section headings */
 .light-mode .section h2 {
   color: #1e40af;
 }
 
+/* All cards & containers */
 .light-mode .card,
 .light-mode .research-card,
 .light-mode .cert-card,
 .light-mode .award-item,
 .light-mode .extra-item,
-.light-mode .contact-btn {
-  background: var(--card);
+.light-mode .contact-btn,
+.light-mode .skill-item {
+  background: var(--card) !important;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
+/* All text (h1, h2, h3, h5, paragraphs, lists, bullets) */
 .light-mode h1,
 .light-mode h2,
 .light-mode h3,
@@ -581,10 +586,14 @@ h5 {
 .light-mode p,
 .light-mode li,
 .light-mode .research-card p,
-.light-mode .award-text p {
-  color: var(--text);
+.light-mode .award-text p,
+.light-mode .extra-text ul li,
+.light-mode .card ul li,
+.light-mode .card ol li {
+  color: var(--text) !important;
 }
 
+/* h4 (institutions, companies, course lines, etc.) */
 .light-mode h4,
 .light-mode .research-meta,
 .light-mode .tenure,
@@ -594,11 +603,35 @@ h5 {
   color: var(--h4-color) !important;
 }
 
+/* Technical Skills pills */
+.light-mode .skill-item {
+  color: #333333 !important;
+}
+.light-mode .skill-item:hover {
+  background: #3b82f6 !important;
+  color: white !important;
+}
+
+/* Contact buttons text & icons */
+.light-mode .contact-btn {
+  color: #333333 !important;
+}
+.light-mode .contact-btn i,
+.light-mode .contact-btn span {
+  color: #333333 !important;
+}
+.light-mode .contact-btn:hover {
+  background: #3b82f6 !important;
+  color: white !important;
+}
+
+/* Keyword tags */
 .light-mode .keyword-tags .tag {
   background: #f1f1f1;
   color: #333333;
 }
 
+/* CV Button */
 .light-mode .btn-cv {
   background: #d2b34c;
   color: #1e40af;
@@ -614,11 +647,9 @@ h5 {
   padding: 0;
   transition: 0.3s;
 }
-
 .light-mode .theme-btn {
   color: #1e40af;
 }
-
 .theme-btn:hover {
   transform: rotate(30deg);
 }
