@@ -684,120 +684,133 @@ h5 {
 }
 
 /* ===================== */
-/* RESPONSIVE DESIGN - MOBILE FRIENDLY */
+/* RESPONSIVE DESIGN - IMPROVED FOR MOBILE */
 /* ===================== */
 
-/* Tablets and smaller (max 768px) */
 @media (max-width: 768px) {
-  
-  /* Navbar padding smaller */
+
+  /* Navbar padding reduced */
   .navbar, .secondary-nav {
     padding: 14px 20px;
   }
-  
-  /* Logo smaller on mobile */
+
+  /* Logo slightly smaller */
   .logo {
     font-size: 18px;
   }
-  
-  /* Secondary navbar - allow wrapping + smaller text */
+
+  /* Secondary navbar - wrap + smaller font + centered */
   .secondary-container {
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 10px;
     justify-content: center;
+    padding: 8px 0;
   }
   .secondary-container a {
     font-size: 13px;
-    padding: 6px 12px;
+    padding: 6px 14px;
+    white-space: normal;
+    text-align: center;
   }
-  
-  /* Hero - smaller title and subtitle */
+
+  /* Hero - smaller title so it doesn't break into 3 lines */
   .hero {
-    padding: 100px 15px 80px;
+    padding: 90px 15px 70px;
   }
   .hero h1 {
-    font-size: 52px;
-    line-height: 1.1;
+    font-size: 46px;          /* reduced from 52px */
+    line-height: 1.05;
   }
   .hero p {
-    font-size: 18px;
+    font-size: 17.5px;
   }
-  
-  /* Buttons in hero - bigger and stacked */
+
+  /* Hero buttons - full width and stacked */
   .buttons {
     margin-top: 30px;
     flex-direction: column;
     gap: 12px;
+    align-items: center;
   }
   .btn, .btn-outline, .btn-cv {
     width: 100%;
-    max-width: 280px;
+    max-width: 300px;
     margin: 0 auto;
-    padding: 14px 24px;
-    font-size: 16px;
+    padding: 15px 24px;
+    font-size: 16.5px;
   }
-  
-  /* All section padding reduced */
+
+  /* All sections padding reduced */
   .section {
-    padding: 70px 0;
+    padding: 65px 0;
   }
-  
-  /* Cards and grids become single column on very small screens */
+
+  /* About Me - force single column, photo on top */
+  .about-wrapper {
+    flex-direction: column;
+    gap: 25px;
+  }
+  .about-img {
+    order: -1;               /* photo comes first */
+    text-align: center;
+  }
+  .about-img img {
+    max-width: 240px;
+    margin: 0 auto;
+  }
+
+  /* Research & Academic Projects - comfortable card width */
   .research-grid,
-  .academic-grid,
+  .academic-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+
+  /* Cards & grids - single column on very small phones */
   .cert-grid,
   .award-grid {
     grid-template-columns: 1fr;
-    gap: 18px;
   }
-  
-  /* About me - stack text and image vertically */
-  .about-wrapper {
-    flex-direction: column;
-    gap: 30px;
-  }
-  .about-img img {
-    max-width: 220px;
-  }
-  
-  /* Work experience cards */
+
+  /* Work experience - better spacing */
   .job-header {
     flex-direction: column;
     align-items: flex-start;
-    gap: 4px;
+    gap: 6px;
   }
   .tenure {
-    font-size: 13px;
+    font-size: 13.5px;
   }
-  
-  /* Skills pills - smaller */
+
+  /* Skills pills */
   .skill-item {
     font-size: 14.5px;
     padding: 8px 16px;
   }
-  
-  /* Contact buttons - smaller and centered */
+
+  /* Contact buttons */
   .contact-buttons {
-    gap: 14px;
+    gap: 16px;
   }
   .contact-btn {
-    width: 110px;
-    height: 110px;
+    width: 118px;
+    height: 118px;
   }
   .contact-btn i {
-    font-size: 42px;
-  }
-  .contact-btn span {
-    font-size: 14px;
+    font-size: 44px;
   }
 }
 
 /* Extra small phones (max 480px) */
 @media (max-width: 480px) {
   .hero h1 {
-    font-size: 42px;
+    font-size: 40px;
   }
   .secondary-container a {
     font-size: 12.5px;
+  }
+  .research-grid,
+  .academic-grid {
+    grid-template-columns: 1fr;   /* single column on very small phones */
   }
 }
