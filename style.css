@@ -534,7 +534,7 @@ h5 {
 }
 
 /* ===================== */
-/* LIGHT MODE THEME - FULLY FIXED as requested */
+/* LIGHT MODE THEME - FULLY FIXED (Background now changes everywhere) */
 /* ===================== */
 .light-mode {
   --bg: #fafadc;
@@ -544,10 +544,15 @@ h5 {
   --accent: #1d4ed8;
 }
 
-/* Main background & text */
+/* Main background & text - now forced everywhere */
 .light-mode body {
   background: var(--bg) !important;
   color: var(--text) !important;
+}
+
+/* Force sections (the big padding areas) to light background */
+.light-mode .section {
+  background: var(--bg) !important;
 }
 
 /* Navbar & Secondary Nav */
@@ -578,7 +583,7 @@ h5 {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
-/* All text (h1, h2, h3, h5, paragraphs, lists, bullets) */
+/* All text (h1, h2, h3, h5, paragraphs, bullets, lists) */
 .light-mode h1,
 .light-mode h2,
 .light-mode h3,
