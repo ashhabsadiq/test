@@ -538,8 +538,8 @@ h5 {
 /* ===================== */
 .light-mode {
   --bg: #e8e3d8;
-  --text: #333333;
-  --card: #ffffff;
+  --text: #292929;
+  --card: #faf8f4;
   --h4-color: #1e40af;
   --accent: #1d4ed8;
 }
@@ -563,12 +563,12 @@ h5 {
 /* Navbar & Secondary Nav */
 .light-mode .navbar,
 .light-mode .secondary-nav {
-  background: #ffffff;
+  background: #faf8f4;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 .light-mode .logo,
 .light-mode .secondary-container a {
-  color: #333333;
+  color: #292929;
 }
 
 /* Section headings */
@@ -615,43 +615,43 @@ h5 {
 
 /* Technical Skills pills */
 .light-mode .skill-item {
-  color: #333333 !important;
+  color: #292929 !important;
 }
 .light-mode .skill-item:hover {
-  background: #3b82f6 !important;
+  background: #faf8f4 !important;
   color: white !important;
 }
 
 /* Contact buttons text & icons */
 .light-mode .contact-btn {
-  color: #333333 !important;
+  color: #292929 !important;
 }
 .light-mode .contact-btn i,
 .light-mode .contact-btn span {
-  color: #333333 !important;
+  color: #292929 !important;
 }
 .light-mode .contact-btn:hover {
-  background: #3b82f6 !important;
+  background: #faf8f4 !important;
   color: white !important;
 }
 
 /* Keyword tags */
 .light-mode .keyword-tags .tag {
   background: #f1f1f1;
-  color: #333333;
+  color: #292929;
 }
 
 /* CV Button */
 .light-mode .btn-cv {
   background: #d2b34c;
-  color: #1e40af;
+  color: #292929;
 }
 
 /* Theme toggle button */
 .theme-btn {
   background: none;
   border: none;
-  color: #cbd5f5;
+  color: #292929;
   font-size: 26px;
   cursor: pointer;
   padding: 0;
