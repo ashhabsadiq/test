@@ -697,12 +697,6 @@ h5 {
 /* Mobile only */
 @media (max-width: 768px) {
 
-  * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-  
   /* Wider overall content */
   .container {
     width: 95% !important;
@@ -714,6 +708,22 @@ h5 {
     line-height: 1.05;
   }
 
+  .section h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 18px;
+}
+h4 {
+  font-size: 16px;
+}
+h5 {
+  font-size: 15.5px;
+  color: #f2f5ff;
+  font-weight: 700;
+  margin: 18px 0 8px 0;
+}
   /* About Me on mobile - hide photo completely */
   .about-img {
     display: none;
