@@ -26,7 +26,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 60px;
+  padding: 16px 40px;
   background: #020617;
   font-size: 14px;
 }
@@ -670,7 +670,7 @@ h5 {
 /* CV Button */
 .light-mode .btn-cv {
   background: #d2b34c;
-  color: #292929;
+  color: #0f172a;
 }
 
 /* Theme toggle button */
@@ -700,11 +700,11 @@ h5 {
   /* Wider overall content */
   .container {
     width: 95% !important;
-    max-width: 1200px;
+    max-width: 1250px;
   }
   /* Hero title */
   .hero h1 {
-    font-size: 46px;
+    font-size: 44px;
     line-height: 1.05;
   }
 
