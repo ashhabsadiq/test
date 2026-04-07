@@ -892,7 +892,7 @@ h5 {
   right: 0;
   top: 50%;
   height: 1px;
-  background: linear-gradient(90deg, transparent, #cbd5f5, transparent);
+  background: linear-gradient(90deg, transparent, #00ffff, transparent);
   opacity: 0.75;
 }
 
@@ -917,11 +917,11 @@ h5 {
 /* ===================== */
 .footer {
   background: #020617;
-  padding: 22px 50px;
+  padding: 18px 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 14.5px;
+  font-size: 12px;
   border-top: 1px solid rgba(255,255,255,0.1);
 }
 .light-mode .footer {
