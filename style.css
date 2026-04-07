@@ -874,37 +874,46 @@ h5 {
 }
 
 /* ===================== */
-/* SECTION DIVIDER LINES + TIGHTER GAPS (FINAL FIX) */
+/* SECTION DIVIDER LINES + TIGHTER GAPS (NEW APPROACH) */
 /* ===================== */
 
-/* Tighter section padding (50px as requested) */
+/* Tighter section padding */
 .section {
   padding: 50px 0 !important;
 }
 
-/* Slim and subtle divider (Joti Shaha style) */
+/* New approach: Full-width clean divider with no dark bleed */
 .section-divider {
   width: 100%;
   height: 1px;
-  background: linear-gradient(90deg, transparent, #cbd5f5, transparent);
+  position: relative;
   margin: 40px auto;
+  background: #e8e3d8;           /* forces light background */
+}
+
+/* The actual slim line */
+.section-divider::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #cbd5f5, transparent);
   opacity: 0.75;
 }
 
-/* Light mode - force clean light background + visible subtle line */
+/* Light mode - clean light background + visible dark line */
 .light-mode .section-divider {
+  background: #e8e3d8 !important;
+}
+.light-mode .section-divider::after {
   background: linear-gradient(90deg, transparent, #292929, transparent) !important;
   opacity: 0.65 !important;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1) !important;
-}
-
-/* Ensure the area around the divider is always light */
-.light-mode .section-divider {
-  background-color: #e8e3d8 !important;
 }
 
 /* Hover effect for better visibility */
-.section-divider:hover {
+.section-divider:hover::after {
   opacity: 0.9;
 }
 
