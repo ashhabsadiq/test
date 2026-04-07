@@ -872,7 +872,7 @@ h5 {
 
 /* Tighter section padding */
 .section {
-  padding: 50px 0 !important;
+  padding: 10px 0 !important;
 }
 
 /* Slim divider - works whether inside or outside section */
