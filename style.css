@@ -684,10 +684,17 @@ h5 {
 }
 
 /* ===================== */
-/* RESPONSIVE DESIGN - FINAL FIXED VERSION */
+/* RESPONSIVE DESIGN - FINAL FIXED VERSION (Desktop + Mobile) */
 /* ===================== */
 
+/* Default state - Hamburger hidden on desktop */
+.hamburger {
+  display: none;
+}
+
+/* Mobile only */
 @media (max-width: 768px) {
+
   /* Wider overall content */
   .container {
     width: 95% !important;
@@ -699,7 +706,7 @@ h5 {
     display: none;
   }
 
-  /* Hamburger visible ONLY on mobile */
+  /* Show hamburger on mobile */
   .hamburger {
     display: flex;
     align-items: center;
