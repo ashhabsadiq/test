@@ -872,7 +872,7 @@ h5 {
 
 /* Tighter section padding */
 .section {
-  padding: 10px 0 !important;
+  padding: 5px 0 !important;
 }
 
 /* Slim divider - works whether inside or outside section */
@@ -959,5 +959,5 @@ h5 {
 }
 
 #contact.section {
-  padding-bottom: 80px !important;
+  padding-bottom: 100px !important;
 }
