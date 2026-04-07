@@ -699,7 +699,7 @@ h5 {
     display: none;
   }
 
-  /* Show hamburger only on mobile */
+  /* Hamburger visible ONLY on mobile */
   .hamburger {
     display: flex;
     align-items: center;
@@ -790,18 +790,9 @@ h5 {
     line-height: 1.05;
   }
 
-  /* About Me - photo below heading on mobile only */
-  .about-wrapper {
-    flex-direction: column;
-    gap: 25px;
-  }
+  /* About Me on mobile - hide photo completely */
   .about-img {
-    order: 2;
-    text-align: center;
-  }
-  .about-img img {
-    max-width: 240px;
-    margin: 0 auto;
+    display: none;
   }
 
   /* Research & Academic cards */
