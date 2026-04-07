@@ -684,144 +684,103 @@ h5 {
 }
 
 /* ===================== */
-/* RESPONSIVE DESIGN - FINAL FIXED VERSION (Desktop + Mobile) */
+/* RESPONSIVE DESIGN + ATTRACTIVE SLIDE-IN MENU */
 /* ===================== */
 
-/* Default state - Hamburger hidden on desktop */
+/* Hamburger visible on all devices now */
 .hamburger {
-  display: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
 }
 
-/* Mobile only */
-@media (max-width: 768px) {
-
-  /* Wider overall content */
-  .container {
-    width: 95% !important;
-    max-width: 1200px;
-  }
-
-  /* Hide old secondary navbar on mobile */
-  .secondary-nav {
-    display: none;
-  }
-
-  /* Show hamburger on mobile */
-  .hamburger {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    cursor: pointer;
-  }
-  .logo {
-    display: none; /* hide text logo on mobile */
-  }
-
-  /* Hide checkbox visually */
-  #mobile-menu-toggle {
-    display: none;
-  }
-
-  /* Hamburger visual */
-  .hamburger-label {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    width: 28px;
-  }
-  .hamburger-label span {
-    height: 3px;
-    background: #cbd5f5;
-    border-radius: 3px;
-    transition: 0.3s;
-  }
-  .light-mode .hamburger-label span {
-    background: #292929;
-  }
-  .hamburger-text {
-    font-size: 15px;
-    font-weight: 600;
-    color: #cbd5f5;
-  }
-  .light-mode .hamburger-text {
-    color: #292929;
-  }
-
-  /* Mobile Menu Panel */
-  .mobile-menu {
-    position: fixed;
-    top: 0;
-    left: -280px;
-    width: 280px;
-    height: 100vh;
-    background: #020617;
-    box-shadow: 4px 0 15px rgba(0, 0, 0, 0.3);
-    padding: 90px 20px 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    transition: left 0.4s ease;
-    z-index: 9999;
-    overflow-y: auto;
-  }
-  .light-mode .mobile-menu {
-    background: #faf8f4;
-  }
-  .mobile-menu a {
-    color: #ffffff;
-    font-size: 16px;
-    padding: 14px 20px;
-    border-radius: 8px;
-    text-decoration: none;
-  }
-  .light-mode .mobile-menu a {
-    color: #292929;
-  }
-  .mobile-menu a:hover {
-    background: #1e293b;
-    color: #00e5d4;
-  }
-  .light-mode .mobile-menu a:hover {
-    background: #e5e7eb;
-    color: #203864;
-  }
-
-  /* Open menu */
-  #mobile-menu-toggle:checked ~ .mobile-menu {
-    left: 0;
-  }
-
-  /* Hero title */
-  .hero h1 {
-    font-size: 46px;
-    line-height: 1.05;
-  }
-
-  /* About Me on mobile - hide photo completely */
-  .about-img {
-    display: none;
-  }
-
-  /* Research & Academic cards */
-  .research-grid,
-  .academic-grid {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-  }
+.hamburger-label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 28px;
+}
+.hamburger-label span {
+  height: 3px;
+  background: #cbd5f5;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+.light-mode .hamburger-label span {
+  background: #292929;
+}
+.hamburger-text {
+  font-size: 15px;
+  font-weight: 600;
+  color: #cbd5f5;
+}
+.light-mode .hamburger-text {
+  color: #292929;
 }
 
-/* Extra small phones */
-@media (max-width: 480px) {
-  .hero h1 {
-    font-size: 40px;
-  }
-  .research-grid,
-  .academic-grid {
-    grid-template-columns: 1fr;
-  }
+/* Attractive Mobile Menu Panel */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 300px;
+  height: 100vh;
+  background: rgba(2, 6, 23, 0.95);
+  backdrop-filter: blur(12px);
+  box-shadow: 4px 0 20px rgba(0, 0, 0, 0.4);
+  padding: 80px 20px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  transition: left 0.4s cubic-bezier(0.32, 0.72, 0, 1);
+  z-index: 9999;
+  overflow-y: auto;
+}
+.light-mode .mobile-menu {
+  background: rgba(248, 246, 242, 0.95);
+  box-shadow: 4px 0 20px rgba(0, 0, 0, 0.15);
+}
+.mobile-menu a {
+  color: #ffffff;
+  font-size: 16.5px;
+  padding: 14px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.light-mode .mobile-menu a {
+  color: #292929;
+}
+.mobile-menu a:hover {
+  background: rgba(255,255,255,0.15);
+  color: #00e5d4;
+}
+.light-mode .mobile-menu a:hover {
+  background: rgba(0,0,0,0.08);
+  color: #203864;
 }
 
-/* Make top navbar sticky on mobile */
+/* Close button at top of panel */
+.menu-close {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-size: 28px;
+  color: #ffffff;
+  cursor: pointer;
+  z-index: 10000;
+}
+.light-mode .menu-close {
+  color: #292929;
+}
+
+/* Open the panel */
+#mobile-menu-toggle:checked ~ .mobile-menu {
+  left: 0;
+}
+
+/* Make top navbar sticky everywhere */
 .navbar {
   position: sticky;
   top: 0;
