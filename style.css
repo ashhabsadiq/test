@@ -567,6 +567,11 @@ h5 {
   background: var(--bg) !important;
 }
 
+/* FIX: remove dark block effect around divider */
+.light-mode .section-divider {
+  background: transparent !important;
+}
+
 /* Navbar & Secondary Nav */
 .light-mode .navbar,
 .light-mode .secondary-nav {
@@ -887,7 +892,6 @@ h5 {
   width: 100%;
   height: 1px;
   margin: 40px auto;
-  background: #e8e3d8;                    /* default light */
   position: relative;
 }
 
@@ -904,9 +908,9 @@ h5 {
 }
 
 /* Light mode - force clean light background + subtle dark line */
-.light-mode .section-divider {
+/*.light-mode .section-divider {
   background: #e8e3d8 !important;
-}
+}*/
 .light-mode .section-divider::after {
   background: linear-gradient(90deg, transparent, #292929, transparent) !important;
   opacity: 0.55 !important;
