@@ -882,30 +882,29 @@ h5 {
   padding: 50px 0 !important;
 }
 
-/* Slim elegant divider - forced to light background */
+/* Slim and subtle divider (Joti Shaha style) */
 .section-divider {
   width: 100%;
-  height: 1px;
+  height: 1px;                    /* very slim */
   background: linear-gradient(90deg, transparent, #cbd5f5, transparent);
   margin: 40px auto;
   opacity: 0.75;
 }
 
-/* Light mode - force clean light background around the line */
+/* Light mode - clean light background + visible subtle dark line */
+.light-mode .section {
+  background: #e8e3d8 !important;
+}
+
 .light-mode .section-divider {
   background: linear-gradient(90deg, transparent, #292929, transparent) !important;
-  opacity: 0.75 !important;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12) !important;
+  opacity: 0.55 !important;
+  box-shadow: none;
 }
 
-/* Make sure the area around the divider is always light in light mode */
-.light-mode .section-divider {
-  background-color: #e8e3d8 !important;   /* forces the surrounding area to light */
-}
-
-/* Hover effect for better visibility */
+/* Optional hover for better visibility */
 .section-divider:hover {
-  opacity: 1;
+  opacity: 0.85;
 }
 
 /* Footer bar */
