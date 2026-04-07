@@ -911,7 +911,9 @@ h5 {
 .section-divider:hover::after {
   opacity: 0.85;
 }
-
+#contact {
+  padding-bottom: 80px;
+}
 /* ===================== */
 /* FOOTER BAR - FIXED */
 /* ===================== */
