@@ -126,7 +126,7 @@ body {
 /* WELCOME LINE - Matches subtitle + custom glow */
 /* ===================== */
 .hero p:nth-of-type(2) {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Inter', sans-serif;
   font-size: 18px;
   font-weight: 500;
   margin-top: 8px;
