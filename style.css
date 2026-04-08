@@ -109,7 +109,7 @@ body {
 .btn-cv {
   background: #d2b34c;
   color: #0f172a;
-  padding: 14px 28px;
+  padding: 14px 24px;
   border-radius: 30px;
   text-decoration: none;
   font-weight: 600;
@@ -122,12 +122,15 @@ body {
   transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(210, 179, 76, 0.5);
 }
-.hero p:nth-of-type(2) {
-  font-size: 19px;
-  font-style: italic;
-  color: #94a3b8;                  /* softer subtitle color */
-  margin-top: 10px;
-  font-weight: 400;
+/* Welcome line - distinct from subtitle */
+.hero p:nth-of-type(2) {           /* targets the "Welcome to My Portfolio" line */
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: #d2b34c;                  /* golden accent */
+  margin-top: 8px;
+  letter-spacing: 1px;
+  opacity: 0.95;
 }
 /* ===================== */
 /* SECTION HEADINGS (h2) */
