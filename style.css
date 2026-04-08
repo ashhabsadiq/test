@@ -697,90 +697,6 @@ h5 {
 
 /* ===================== */
 /* RESPONSIVE DESIGN + BEAUTIFUL SIDE PANEL */
-/* ===================== */
-
-/* Mobile only */
-@media (max-width: 768px) {
-
-  /* Wider overall content */
-  .container {
-    width: 95% !important;
-    max-width: 1250px;
-  }
-  /* Hero title */
-  .hero h1 {
-    font-size: 40px;
-    line-height: 1.05;
-  }
-
-    .buttons {
-  margin-top: 40px;
-}
-
-  .section h2 {
-  font-size: 24px;
-}
-
-h3 {
-  font-size: 16.5px;
-}
-h4 {
-  font-size: 15.5px;
-}
-h5 {
-  font-size: 15.5px;
-  color: #f2f5ff;
-  font-weight: 700;
-  margin: 18px 0 8px 0;
-}
-  /* About Me on mobile - hide photo completely */
-  .about-img {
-    display: none;
-  }
-
-  /* Research & Academic cards */
-  .research-grid,
-  .academic-grid {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-  }
-/* ===================== */
-  /* MOBILE NAVBAR - GLASS EFFECT (fixed for light theme) */
-  /* ===================== */
-  .navbar {
-    padding: 14px 15px;
-    font-size: 12px;
-    background: rgba(2, 6, 23, 0.94);
-    backdrop-filter: blur(20px);
-    border-bottom: 1px solid rgba(255,255,255,0.08);
-  }
-
-  /* Light mode - solid & clean (no see-through text) */
-  .light-mode .navbar {
-    font-size: 12px;
-    background: rgba(248, 246, 242, 0.97) !important;
-    backdrop-filter: blur(20px);
-    border-bottom: 1px solid rgba(0,0,0,0.08);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  }
-  
-  .footer {
-  padding: 14px 15px;
-  font-size: 8px;
-}
-
-.back-to-top {
-  padding: 14px 15px;
-  font-size: 8px;
-}
-}
-  
- /* .navbar {
-  padding: 14px 15px;
-  font-size: 12px;
-} */
-
-
 /* Hamburger visible everywhere now */
 .hamburger {
   display: flex;
@@ -997,6 +913,81 @@ h5 {
   background: #00e5d4;
   color: #020617;
   transform: translateY(-2px);
+}
+/* Mobile only */
+@media (max-width: 768px) {
+
+  /* Wider overall content */
+  .container {
+    width: 95% !important;
+    max-width: 1250px;
+  }
+  /* Hero title */
+  .hero h1 {
+    font-size: 40px;
+    line-height: 1.05;
+  }
+
+    .buttons {
+  margin-top: 40px;
+}
+
+  .section h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 16.5px;
+}
+h4 {
+  font-size: 15.5px;
+}
+h5 {
+  font-size: 15.5px;
+  color: #f2f5ff;
+  font-weight: 700;
+  margin: 18px 0 8px 0;
+}
+  /* About Me on mobile - hide photo completely */
+  .about-img {
+    display: none;
+  }
+
+  /* Research & Academic cards */
+  .research-grid,
+  .academic-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+/* ===================== */
+  /* MOBILE NAVBAR - GLASS EFFECT (fixed for light theme) */
+  /* ===================== */
+  .navbar {
+    padding: 14px 15px;
+    font-size: 12px;
+    background: rgba(2, 6, 23, 0.94);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+
+  /* Light mode - solid & clean (no see-through text) */
+  .light-mode .navbar {
+    font-size: 12px;
+    background: rgba(248, 246, 242, 0.97) !important;
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  .footer {
+  padding: 14px 15px;
+  font-size: 8px;
+}
+
+.back-to-top {
+  padding: 14px 15px;
+  font-size: 8px;
+}
 }
 
 #contact.section {
