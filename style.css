@@ -27,8 +27,20 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 16px 50px;
-  background: #020617;
+  background: rgba(2, 6, 23, 0.88);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
   font-size: 15.5px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Light mode glass */
+.light-mode .navbar {
+  background: rgba(248, 246, 242, 0.92);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(0,0,0,0.08);
 }
 .logo {
   font-family: 'Playfair Display', serif;
@@ -545,11 +557,11 @@ h5 {
 }
 
 /* Navbar & Secondary Nav */
-.light-mode .navbar,
+/*.light-mode .navbar,
 .light-mode .secondary-nav {
   background: #faf8f4;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
+}*/
 .light-mode .logo,
 .light-mode .secondary-container a {
   color: #292929;
