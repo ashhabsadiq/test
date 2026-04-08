@@ -39,7 +39,7 @@ body {
 /* Light mode glass */
 .light-mode .navbar {
   background: rgba(248, 246, 242, 0.92);
-  backdrop-filter: blur(15px);
+  backdrop-filter: blur(50px);
   border-bottom: 1px solid rgba(0,0,0,0.08);
 }
 .logo {
