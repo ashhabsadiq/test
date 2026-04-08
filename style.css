@@ -45,6 +45,7 @@ body {
 .logo {
   font-family: 'Playfair Display', serif;
   font-size: 20px;
+  color: #f7fbff;
   font-weight: 700;
 }
 .social-icons {
@@ -52,7 +53,7 @@ body {
   gap: 22px;
 }
 .social-icons a {
-  color: #cbd5f5;
+  color: #f7fbff;
   font-size: 26px;
   transition: 0.3s;
 }
