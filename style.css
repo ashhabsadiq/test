@@ -39,7 +39,7 @@ body {
 /* Light mode glass */
 .light-mode .navbar {
   background: rgba(248, 246, 242, 0.92);
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(15px);
   border-bottom: 1px solid rgba(0,0,0,0.08);
 }
 .logo {
@@ -928,7 +928,8 @@ h5 {
 /* FOOTER BAR - FIXED */
 /* ===================== */
 .footer {
-  background: #020617;
+  background: rgba(2, 6, 23, 0.88);
+  backdrop-filter: blur(20px);
   padding: 12px 50px;
   display: flex;
   justify-content: space-between;
@@ -937,7 +938,8 @@ h5 {
   border-top: 1px solid rgba(255,255,255,0.1);
 }
 .light-mode .footer {
-  background: #faf8f4;
+  background: rgba(248, 246, 242, 0.92);
+  backdrop-filter: blur(15px);
   border-top: 1px solid rgba(0,0,0,0.1);
   color: #292929;
 }
