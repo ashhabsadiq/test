@@ -986,6 +986,11 @@ h5 {
     left: -50vw !important;      /* slide from left */
     max-width: 320px;            /* safety limit on big phones */
   }
+  /* OPEN THE MENU - must be inside media query */
+    #mobile-menu-toggle:checked ~ .mobile-menu {
+    left: 0 !important;
+  }
+  
   .footer {
   padding: 14px 15px;
   font-size: 9px;
