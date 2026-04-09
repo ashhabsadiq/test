@@ -939,6 +939,23 @@ h5 {
 #about h2 {
   margin-top: 0 !important;
 }
+/* ===================== */
+/* SMOOTH SCROLL + OFFSET FOR STICKY NAVBAR */
+/* ===================== */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Reserve space for the sticky navbar so section headings are not hidden */
+.section {
+  scroll-margin-top: 90px !important;
+}
+
+/* Extra safety for hero (if needed) */
+.hero {
+  scroll-margin-top: 80px !important;
+}
+
 /* Mobile only */
 @media (max-width: 768px) {
   /* Wider overall content */
@@ -983,9 +1000,8 @@ h5 {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
   }
-/* ===================== */
-  /* MOBILE NAVBAR - GLASS EFFECT (fixed for light theme) */
-  /* ===================== */
+
+  /* MOBILE NAVBAR */
   .navbar {
     padding: 14px 15px;
     font-size: 12px;
@@ -993,7 +1009,6 @@ h5 {
     backdrop-filter: blur(20px);
     border-bottom: 1px solid rgba(255,255,255,0.08);
   }
-  /* Light mode - solid & clean (no see-through text) */
   .light-mode .navbar {
     font-size: 12px;
     background: rgba(248, 246, 242, 0.97) !important;
@@ -1001,54 +1016,54 @@ h5 {
     border-bottom: 1px solid rgba(0,0,0,0.08);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   }
-  /* ===================== */
-  /* SIDE MENU PANEL - 50% WIDTH ON MOBILE ONLY */
-  /* ===================== */
+
+  /* SIDE MENU PANEL */
   .mobile-menu {
-    width: 58vw !important; /* ← exactly 50% of screen width */
-    left: -58vw !important; /* slide from left */
-    max-width: 340px; /* safety limit on big phones */
+    width: 58vw !important;
+    left: -58vw !important;
+    max-width: 340px;
   }
-  /* OPEN THE MENU - must be inside media query */
-    #mobile-menu-toggle:checked ~ .mobile-menu {
+  #mobile-menu-toggle:checked ~ .mobile-menu {
     left: 0 !important;
   }
- 
+
   .footer {
-  padding: 14px 15px;
-  font-size: 9px;
-}
-.back-to-top {
-  padding: 14px 15px;
-  font-size: 10px;
-}
-  /* All sections - REDUCED vertical spacing (this is the only change) */
-  .section {
-    padding: 35px 8px !important;   /* ← reduced from 100px / 1px to 35px top & bottom */
+    padding: 14px 15px;
+    font-size: 9px;
   }
-  /* Buttons - slightly smaller */
+  .back-to-top {
+    padding: 14px 15px;
+    font-size: 10px;
+  }
+
+  /* ===================== */
+  /* STRONG REDUCED VERTICAL SPACING - OVERRIDES EVERYTHING */
+  /* ===================== */
+  .section,
+  #about.section,
+  #education.section,
+  #research.section,
+  #projects.section,
+  #experience.section,
+  #skills.section,
+  #certifications.section,
+  #awards.section,
+  #extracurricular.section,
+  #contact.section {
+    padding-top: 32px !important;
+    padding-bottom: 32px !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+
+  /* Hero */
+  .hero {
+    padding: 100px 8px 30px !important;
+  }
+
+  /* Buttons */
   .btn {
     padding: 10px 18px !important;
     font-size: 14px;
   }
-  /* Optional: tighter hero on mobile (you can remove if you don't want any change) */
-  .hero {
-    padding: 100px 8px 30px !important;
-  }
-}
-/* ===================== */
-/* SMOOTH SCROLL + OFFSET FOR STICKY NAVBAR */
-/* ===================== */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Reserve space for the sticky navbar so section headings are not hidden */
-.section {
-  scroll-margin-top: 90px !important;
-}
-
-/* Extra safety for hero (if needed) */
-.hero {
-  scroll-margin-top: 80px !important;
 }
