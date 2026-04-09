@@ -927,12 +927,10 @@ h5 {
   color: #020617;
   transform: translateY(-2px);
 }
-/* ===================== */
-/* MOBILE RESPONSIVE - STRONG REDUCED VERTICAL SPACING */
-/* ===================== */
+/* Mobile only */
 @media (max-width: 768px) {
 
-  /* Container */
+  /* Wider overall content */
   .container {
     width: 98% !important;
     max-width: 1250px;
@@ -941,32 +939,35 @@ h5 {
     margin-left: auto;
     margin-right: auto;
   }
-
-  /* Navbar */
-  .navbar {
-    padding: 14px 15px !important;
-    font-size: 12px;
+  /* Hero title */
+  .hero h1 {
+    font-size: 40px;
+    line-height: 1.05;
   }
 
-  /* Hero */
-  .hero {
-    padding: 100px 8px 30px !important;
-  }
+    .buttons {
+  margin-top: 40px;
+}
 
-  /* All sections - FORCE reduced vertical gap */
-  .section,
-  .section.section {
-    padding-top: 35px !important;
-    padding-bottom: 35px !important;
-    padding-left: 8px !important;
-    padding-right: 8px !important;
-  }
+  .section h2 {
+  font-size: 22px;
+}
 
-  /* Specific sections that have extra rules */
-  #contact.section,
-  #about.section {
-    padding-top: 35px !important;
-    padding-bottom: 35px !important;
+h3 {
+  font-size: 16.5px;
+}
+h4 {
+  font-size: 15.5px;
+}
+h5 {
+  font-size: 15.5px;
+  color: #f2f5ff;
+  font-weight: 700;
+  margin: 18px 0 8px 0;
+}
+  /* About Me on mobile - hide photo completely */
+  .about-img {
+    display: none;
   }
 
   /* Research & Academic cards */
@@ -975,32 +976,62 @@ h5 {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
   }
+/* ===================== */
+  /* MOBILE NAVBAR - GLASS EFFECT (fixed for light theme) */
+  /* ===================== */
+  .navbar {
+    padding: 14px 15px;
+    font-size: 12px;
+    background: rgba(2, 6, 23, 0.94);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
 
-  /* Buttons */
+  /* Light mode - solid & clean (no see-through text) */
+  .light-mode .navbar {
+    font-size: 12px;
+    background: rgba(248, 246, 242, 0.97) !important;
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+  /* ===================== */
+  /* SIDE MENU PANEL - 50% WIDTH ON MOBILE ONLY */
+  /* ===================== */
+  .mobile-menu {
+    width: 58vw !important;      /* ← exactly 50% of screen width */
+    left: -58vw !important;      /* slide from left */
+    max-width: 340px;            /* safety limit on big phones */
+  }
+  /* OPEN THE MENU - must be inside media query */
+    #mobile-menu-toggle:checked ~ .mobile-menu {
+    left: 0 !important;
+  }
+  
+  .footer {
+  padding: 14px 15px;
+  font-size: 9px;
+}
+
+.back-to-top {
+  padding: 14px 15px;
+  font-size: 10px;
+}
+
+  /* All sections - 8px side padding */
+  .section {
+    padding: 1px 8px !important;
+  }
+
+  /* Buttons - slightly smaller */
   .btn {
     padding: 10px 18px !important;
     font-size: 14px;
   }
 
-  /* Footer */
-  .footer {
-    padding: 14px 15px;
-    font-size: 9px;
-  }
-  .back-to-top {
-    padding: 14px 15px;
-    font-size: 10px;
-  }
-
-  /* Side menu */
-  .mobile-menu {
-    width: 58vw !important;
-    left: -58vw !important;
-    max-width: 340px;
-  }
-
-  #mobile-menu-toggle:checked ~ .mobile-menu {
-    left: 0 !important;
+  /* Optional: tighter hero on mobile (you can remove if you don't want any change) */
+  .hero {
+    padding: 100px 8px 30px !important;
   }
 }
 
