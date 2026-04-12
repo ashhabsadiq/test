@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Md. Ashhab Sadiq | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="icon" href="Images/Icon.ico" type="image/png">
+</head>
+<body>
+
+<!-- TOP NAVBAR -->
+<header class="navbar">
+  <div class="hamburger">
+    <input type="checkbox" id="mobile-menu-toggle">
+    <label for="mobile-menu-toggle" class="hamburger-label">
+      <span></span><span></span><span></span>
+    </label>
+    <span class="hamburger-text">Portfolio Sections</span>
+    <nav class="mobile-menu">
+      <div class="menu-close"><i class="fas fa-times"></i></div>
+      <a href="index.html#about" class="menu-link">ABOUT ME</a>
+      <a href="index.html#education" class="menu-link">EDUCATION</a>
+      <a href="index.html#research" class="menu-link">RESEARCH & PUBLICATIONS</a>
+      <a href="index.html#projects" class="menu-link">ACADEMIC PROJECTS</a>
+      <a href="index.html#experience" class="menu-link">WORK EXPERIENCES</a>
+      <a href="index.html#skills" class="menu-link">TECHNICAL SKILLS</a>
+      <a href="index.html#certifications" class="menu-link">CERTIFICATIONS</a>
+      <a href="index.html#awards" class="menu-link">AWARDS</a>
+      <a href="index.html#extracurricular" class="menu-link">EXTRACURRICULARS</a>
+      <a href="index.html#contact" class="menu-link">CONTACT & PROFILES</a>
+    </nav>
+  </div>
+
+  <div class="social-icons">
+    <a href="https://github.com/ashhabsadiq" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="mailto:sadiq.kuet.urp@gmail.com"><i class="fas fa-envelope"></i></a>
+    <button id="theme-toggle" class="theme-btn"><i class="fas fa-sun"></i></button>
+  </div>
+</header>
+
+<!-- TITLE SECTION + TWO BUTTONS (perfectly aligned on same line) -->
+<section class="hero" style="padding: 100px 20px 30px; text-align: left;">
+  <div class="container">
+    
+<!-- Buttons row: Back on left -->
+    <div style="display: flex; align-items: center; margin-bottom: 35px;">
+      <a href="index.html#academic-regional" class="btn" style="font-size:14px; padding:10px 24px; white-space:nowrap;">
+        ← Back to Portfolio
+      </a>
+    </div>
+
+    <h2 style="margin-top:0; text-align:justify;">Assessment of Regional Diversity: A Study on Bangladesh</h2>
+  </div>
+</section>
+
+<!-- CONTENT -->
+<section class="section">
+  <div class="container">
+
+    <!-- Aim -->
+    <h4><i class="fas fa-bullseye"></i> Objectives</h4>
+    <p style="font-size:17px; line-height:1.8; margin-bottom:40px; text-align:justify;">
+      There are two specific objectives of this study. One is to assess the regional diversity of Bangladesh through a multi-criteria spatial analysis combining socio-economic, structural, and ecological indicators. The other one is to identify which districts of Bangladesh are underdeveloped, which ones are developed and which ones are developing.
+    </p>
+
+    <!-- Study Area - NEW SECTION -->
+    <h4 style="margin-top: 60px;"><i class="fas fa-map-marker-alt"></i> Study Area</h4>
+    <div style="display:flex; gap:50px; flex-wrap:wrap; align-items:start;">
+      <div style="flex:1; min-width:300px;">
+        <p style="font-size:17px; line-height:1.8; text-align:justify;">
+Bangladesh, located in the Ganges–Brahmaputra delta, is a densely populated country with marked regional differences shaped by environmental, economic, and social conditions. While major cities like Dhaka have seen rapid growth with better infrastructure, services, and employment opportunities, many peripheral regions remain comparatively underdeveloped. This imbalance is influenced by uneven industrial concentration, limited access to healthcare and basic services, and varying ecological conditions such as flooding, salinity, drought, and extreme rainfall across different parts of the country.</p>
+        <p style="font-size:17px; line-height:1.8; text-align:justify;">
+These contrasts create a clear pattern of regional diversity, where some areas continue to lag behind despite overall national progress. Understanding these spatial differences is important to identify gaps in development and to support more balanced planning. This study focuses on examining such regional disparities across Bangladesh to highlight the underlying factors and guide more equitable distribution of resources and opportunities.</p>
+      </div>
+      <div style="flex:1; min-width:300px;">
+        <div style="border: 1px solid rgba(0,0,0,0.08); border-radius:12px; padding:8px; background:#fff; box-shadow:0 8px 25px rgba(0,0,0,0.1);">
+          <img src="Images/rps_studyarea.png" alt="Study Area Map" style="width:100%; border-radius:8px;">
+        </div>
+      </div>
+    </div>
+
+  <!-- Factors -->
+  <h4  style="margin-top: 60px;"><i class="fas fa-layer-group"></i> Factors</h4> 
+   <div style="border: 1px solid rgba(0,0,0,0.08); border-radius:12px; padding:8px; background:#fff; box-shadow:0 8px 25px rgba(0,0,0,0.1);">
+      <img src="Images/rps_factors.png" alt="List of Factors" style="width:100%; border-radius:8px;">
+   </div>
+    
+  <!-- Methodology -->
+  <h4  style="margin-top: 60px;"><i class="fas fa-cogs"></i> Methodology</h4>
+    <div style="display:flex; gap:50px; flex-wrap:wrap; align-items:start;">
+      <div style="flex:1; min-width:300px;">
+        <ul style="line-height:1.85; font-size:16px; padding-left:22px; text-align:justify;">
+ <li><strong>Data Collection:</strong> Satellite imagery (Sentinel-2, Landsat-8, DEM) and secondary data (Bangladesh Bureau of Statistics, World Bank).</li>
+ <li><strong>Pre-processing:</strong> Computed remote sensing indices such as LULC, LST using Google Earth Engine (GEE).</li>
+ <li><strong>Thematic Mapping:</strong> Generated district-wise maps for LULC, elevation, drought, and flood susceptibility.</li>
+ <li><strong>Categorical Weights:</strong> Socio-economic (45%), Structural (30%), Ecological (25%)</li>
+ <li><strong>Reclassification & Scoring:</strong> All factors were normalized to a 1 to 5 Likert scale (Jenks method). Positive and negative impacts were adjusted accordingly.</li>
+ <li><strong>Weighted Overlay:</strong> Combined all standardized layers to produce a composite Regional Diversity Map of Bangladesh.</li>
+        </ul>
+      </div>
+      <div style="flex:1; min-width:300px;">
+        <div style="border: 1px solid rgba(0,0,0,0.08); border-radius:12px; padding:8px; background:#fff; box-shadow:0 8px 25px rgba(0,0,0,0.1);">
+          <img src="Images/rps_methodology.png" alt="Condition of Waster and Water Management System" style="width:100%; border-radius:8px;">
+        </div>
+      </div>
+    </div>
+
+ <!-- Findings LULC -->
+   <h4 style="margin-top: 60px;"><i class="fas fa-lightbulb"></i> Key Findings (LULC)</h4>
+    <div style="display:flex; gap:50px; flex-wrap:wrap; align-items:start;">
+      <div style="flex:1; min-width:300px;">
+        <ul style="line-height:1.85; font-size:16px; padding-left:22px; text-align:justify;">
+          <li>The LULC 2021 map was developed using Sentinel-2 imagery and a supervised classification process (Maximum Likelihood Classification).</li>
+          <li>Vegetation covered 47.26%, built-up area 20.38%, waterbody 15.00%, and vacant land 17.37% of the total area.</li>
+          <li>Major built-up concentrations were observed in Dhaka, Gazipur, Chattogram, and Narayanganj districts.</li>
+          <li>Northern and eastern hilly regions retained higher vegetation and open-space proportions.</li>
+          <li>Accuracy assessment yielded 89% overall accuracy and a Kappa coefficient of 0.71, ensuring strong reliability.</li>
+        </ul>
+      </div>
+      <div style="flex:1; min-width:300px;">
+        <div style="border: 1px solid rgba(0,0,0,0.08); border-radius:12px; padding:8px; background:#fff; box-shadow:0 8px 25px rgba(0,0,0,0.1);">
+          <img src="Images/rps_lulc.png" alt="LULC Map and Workflow" style="width:100%; border-radius:8px;">
+        </div>
+      </div>
+    </div>
+
+     <!-- Findings LST -->
+   <h4 style="margin-top: 60px;"><i class="fas fa-lightbulb"></i> Key Findings (LST)</h4>
+    <div style="display:flex; gap:50px; flex-wrap:wrap; align-items:start;">
+      <div style="flex:1; min-width:300px;">
+        <ul style="line-height:1.85; font-size:16px; padding-left:22px; text-align:justify;">
+          <li>LST for Bangladesh in April 2021 ranged from 19.75 °C to 42.89 °C, with a national mean of about 31.3 °C.</li>
+          <li>Western and southern districts exhibited the highest temperatures, while eastern and coastal regions remained relatively cooler due to vegetation                  and water influence.</li>
+          <li>The LST was derived from Landsat 8 using NDVI-based emissivity correction, integrating atmospheric and brightness temperature calculations.</li>
+          <li>The resulting pattern highlights urban heat concentration in major cities such as Dhaka, Khulna, and Rajshahi, confirming the effect of land-cover                 change on surface warming.</li>
+        </ul>
+      </div>
+      <div style="flex:1; min-width:300px;">
+        <div style="border: 1px solid rgba(0,0,0,0.08); border-radius:12px; padding:8px; background:#fff; box-shadow:0 8px 25px rgba(0,0,0,0.1);">
+          <img src="Images/rps_lst.png" alt="LST Map and Workflow" style="width:100%; border-radius:8px;">
+        </div>
+      </div>
+    </div>
+    
+   <!-- Findings Elevation, Floord and Drought -->
+   <h4 style="margin-top: 60px;"><i class="fas fa-lightbulb"></i> Key Findings (Elevation, Flood & Drought)</h4>
+    <div style="display:flex; gap:50px; flex-wrap:wrap; align-items:start;">
+      <div style="flex:1; min-width:300px;">
+        <ul style="line-height:1.85; font-size:16px; padding-left:22px; text-align:justify;">
+      <li>Elevation: Altitude ranges from <5 m in coastal plains to >900 m in the Chittagong Hill Tracts.</li>
+      <li>Flood: High flood susceptibility identified in Satkhira, Khulna, Barguna, Bhola, and Sylhet, where elevation is lowest.</li>
+      <li>Drought: Severe drought observed in Rajshahi, Naogaon, Natore, Bogura, and Dinajpur, primarily within the Barind Tract.</li>
+      <li>These findings demonstrate strong spatial correlation among elevation, vegetation loss, and environmental hazards.</li>
+        </ul>
+      </div>
+      <div style="flex:1; min-width:300px;">
+        <div style="border: 1px solid rgba(0,0,0,0.08); border-radius:12px; padding:8px; background:#fff; box-shadow:0 8px 25px rgba(0,0,0,0.1);">
+          <img src="Images/rps_thematicmaps.png" alt="Elevation, Flood and Drought Maps" style="width:100%; border-radius:8px;">
+        </div>
+      </div>
+    </div>
+    
+    <!-- Bottom Back button -->
+    <div style="text-align:left; margin:80px 0 60px;">
+      <a href="index.html#academic-regional" class="btn" style="font-size:15px; padding:10px 20px;">
+        ← Back to Portfolio
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-left">© 2026 Md. Ashhab Sadiq, Bangladesh</div>
+  <a href="#" onclick="window.scrollTo({top:0, behavior:'smooth'}); return false;" class="back-to-top">↑ Back to Top</a>
+</footer>
+
+<script>
+// Theme toggle + menu script (same as main portfolio)
+const toggleBtn = document.getElementById('theme-toggle');
+const body = document.body;
+function setTheme(isLight) {
+  if (isLight) {
+    body.classList.add('light-mode');
+    toggleBtn.innerHTML = '<i class="fas fa-moon"></i>';
+  } else {
+    body.classList.remove('light-mode');
+    toggleBtn.innerHTML = '<i class="fas fa-sun"></i>';
+  }
+}
+if (localStorage.getItem('theme') === 'light') setTheme(true);
+toggleBtn.addEventListener('click', () => {
+  const isLight = !body.classList.contains('light-mode');
+  setTheme(isLight);
+  localStorage.setItem('theme', isLight ? 'light' : 'dark');
+});
+
+document.querySelectorAll('.menu-link').forEach(link => {
+  link.addEventListener('click', () => {
+    document.getElementById('mobile-menu-toggle').checked = false;
+  });
+});
+document.querySelector('.menu-close').addEventListener('click', () => {
+  document.getElementById('mobile-menu-toggle').checked = false;
+});
+</script>
+<!-- MOBILE RESPONSIVE - Same as main portfolio -->
+<style>
+@media (max-width: 768px) {
+  .navbar { padding: 14px 16px !important; }
+  .container { width: 98% !important; padding-left: 8px !important; padding-right: 8px !important; }
+  .hero { padding: 80px 8px 18px !important; font-size: 12px !important }
+  .section { padding: 50px 8px !important; }
+  .btn { padding: 10px 8px !important; font-size: 14px; }
+}
+</style>
+</body>
+</html>
